@@ -11,32 +11,33 @@ package CalculadoraRemota;
  */
 public class Operacoes {
     
-    double num1;
-    float num;
-    float num2;
-    float num3;
     float resultado;
+    float primeiro_valor;
+    float segundo_valor;
     
     Operacoes(String valor1, String valor2){
-        num2 = Float.parseFloat(valor1);
-        num3 = Float.parseFloat(valor2);
+        primeiro_valor = Float.parseFloat(valor1);
+        segundo_valor = Float.parseFloat(valor2);
         
     }
-    
+    //função que realiza a operação de soma:
     float soma(){
-        num = num2+num3;
-        return num;
+        resultado = primeiro_valor+segundo_valor;
+        return resultado;
     }   
+    //função que realiza a operação de subtração:
     float subtrai(){
-        num = num2-num3;
-        return num;
+        resultado = primeiro_valor-segundo_valor;
+        return resultado;
     }
+    //função que realiza a operação de multiplicação:
     float multiplica(){
-        num = num2*num3;
-        return num;
+        resultado = primeiro_valor*segundo_valor;
+        return resultado;
     }
+    //função que realiza a operação de divisão:
     float divide(){
-        num = num2/num3;
-        return num;
+        resultado = primeiro_valor/segundo_valor;
+        return resultado;
     }
 }
